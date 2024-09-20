@@ -144,3 +144,55 @@
 .menu-animation.menu-bar:last-child {
   --tw-rotate: -45deg;
 }
+
+.form {
+  z-index: 1;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-width: 0 0 1px;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.6;
+  --tw-text-opacity: 1;
+  color: rgb(19 22 35 / var(--tw-text-opacity));
+  padding: 16px 32px 16px 0;
+}
+
+.form:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(19 22 35 / var(--tw-border-opacity));
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  overflow: hidden;
+  overflow-wrap: break-word;
+  height: 80.6667px;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 16px 32px 16px 0;
+  z-index: 1;
+  width: 100%;
+  border-width: 0 0 1px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+textarea:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(19 22 35 / var(--tw-border-opacity));
+}
+
+.radio:has(> [type="radio"]:checked) {
+  background-color: black;
+  color: white;
+}

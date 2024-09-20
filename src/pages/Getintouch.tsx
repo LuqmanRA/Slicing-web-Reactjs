@@ -1,9 +1,10 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useInView } from "react-intersection-observer";
+import FormSection from "../components/Getintouch/FormSection";
 
 const Getintouch = () => {
-  const [section1Ref, section1InView] = useInView({ threshold: 0 });
+  const [section1Ref, section1InView] = useInView({ threshold: 0.7 });
   return (
     <>
       <Header
@@ -13,9 +14,12 @@ const Getintouch = () => {
         }
         bg={section1InView ? "bg-white" : "bg-black"}
       />
-      <main ref={section1Ref}>
-        <Footer />
+      <main>
+        <FormSection />
       </main>
+      <div ref={section1Ref}>
+        <Footer />
+      </div>
     </>
   );
 };
