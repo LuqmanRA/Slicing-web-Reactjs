@@ -1,6 +1,6 @@
 import HeroSection from "../components/home/HeroSection";
 import ParallaxVideoSection from "../components/ParallaxVideoSection";
-import Solutions from "../components/solutions";
+import Solutions from "../components/SolutionsSection";
 import Header from "../components/Header/Header";
 import WorkSection from "../components/home/WorkSection";
 import SkillsSection from "../components/SkillsSection";
