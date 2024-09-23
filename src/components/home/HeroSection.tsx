@@ -1,4 +1,4 @@
-import HoverLink from "../components/HoverLink";
+import HoverLink from "../HoverLink";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {

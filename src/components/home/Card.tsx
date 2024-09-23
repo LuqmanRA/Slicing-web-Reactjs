@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/cardlogo.svg?react";
+import Logo from "../../assets/cardlogo.svg?react";
 import HoverVideoPlayer from "react-hover-video-player";
 import PausedOverlay from "./PausedOverlay";
 import { useRef } from "react";

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import HoverLink from "./HoverLink";
-import Star from "../assets/star.svg?react";
-import Client from "../assets/client.svg?react";
+import HoverLink from "../HoverLink";
+import Star from "../../assets/star.svg?react";
+import Client from "../../assets/client.svg?react";
 import StickyFooter from "./StickyFooter";
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
@@ -42,36 +43,7 @@ const Footer = () => {
                   </div>
                   <div className="hidden lg:block">
                     <div className="flex justify-between md:justify-start md:gap-10 lg:gap-6 2xl:gap-10">
-                      <Link
-                        to="#"
-                        className="underline-hover text-sm min-h-6 relative text-white"
-                      >
-                        X (Twitter)
-                      </Link>
-                      <Link
-                        to="#"
-                        className="underline-hover text-sm min-h-6 relative text-white"
-                      >
-                        Instagram
-                      </Link>
-                      <Link
-                        to="#"
-                        className="underline-hover text-sm min-h-6 relative text-white"
-                      >
-                        Instagram
-                      </Link>
-                      <Link
-                        to="#"
-                        className="underline-hover text-sm min-h-6 relative text-white"
-                      >
-                        Instagram
-                      </Link>
-                      <Link
-                        to="#"
-                        className="underline-hover text-sm min-h-6 relative text-white"
-                      >
-                        Instagram
-                      </Link>
+                      <SocialMedia />
                     </div>
                   </div>
                 </div>
@@ -114,30 +86,7 @@ const Footer = () => {
                       </div>
                       <div className="hidden w-full flex-col md:flex lg:hidden">
                         <div className="flex justify-between md:justify-start md:gap-10 lg:gap-6 2xl:gap-10">
-                          <Link
-                            to="#"
-                            className="underline-hover text-sm min-h-6 relative text-white"
-                          >
-                            Instagram
-                          </Link>
-                          <Link
-                            to="#"
-                            className="underline-hover text-sm min-h-6 relative text-white"
-                          >
-                            Instagram
-                          </Link>
-                          <Link
-                            to="#"
-                            className="underline-hover text-sm min-h-6 relative text-white"
-                          >
-                            Instagram
-                          </Link>
-                          <Link
-                            to="#"
-                            className="underline-hover text-sm min-h-6 relative text-white"
-                          >
-                            Instagram
-                          </Link>
+                          <SocialMedia />
                         </div>
                       </div>
                       <div className="flex">
@@ -164,30 +113,7 @@ const Footer = () => {
                     </div>
                     <div className="w-full flex-col md:hidden lg:w-1/2">
                       <div className="flex justify-between md:justify-start md:gap-10 lg:gap-6 2xl:gap-10">
-                        <Link
-                          to="#"
-                          className="underline-hover text-sm min-h-6 relative text-white"
-                        >
-                          Instagram
-                        </Link>
-                        <Link
-                          to="#"
-                          className="underline-hover text-sm min-h-6 relative text-white"
-                        >
-                          Instagram
-                        </Link>
-                        <Link
-                          to="#"
-                          className="underline-hover text-sm min-h-6 relative text-white"
-                        >
-                          Instagram
-                        </Link>
-                        <Link
-                          to="#"
-                          className="underline-hover text-sm min-h-6 relative text-white"
-                        >
-                          Instagram
-                        </Link>
+                        <SocialMedia />
                       </div>
                     </div>
                   </div>

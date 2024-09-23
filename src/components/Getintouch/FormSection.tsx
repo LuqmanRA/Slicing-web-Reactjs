@@ -1,4 +1,4 @@
-import HoverLink from "../HoverLink";
+import Button from "./Button";
 
 const FormSection = () => {
   return (
@@ -85,13 +85,7 @@ const FormSection = () => {
               </div>
             </div>
             <div className="md:flex">
-              <HoverLink
-                to="/get-in-touch"
-                bg="bg-white text-black"
-                textcolor="after:text-white"
-              >
-                Send Request
-              </HoverLink>
+              <Button />
             </div>
           </form>
         </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Solutions = () => {
+const SolutionsSection = () => {
   return (
     <section className="relative z-50 bg-white px-6 py-20 md:pb-15 md:pt-[100px] md:px-20 xl:px-[156px] xl:py-40 2xl:px-[256px] 2xl:py-[200px]">
       <div className="m-auto w-full 2xl:max-w-[1408px]">
@@ -111,4 +111,4 @@ const Solutions = () => {
   );
 };
 
-export default Solutions;
+export default SolutionsSection;

@@ -1,10 +1,10 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
 import FormSection from "../components/Getintouch/FormSection";
 
 const Getintouch = () => {
-  const [section1Ref, section1InView] = useInView({ threshold: 0.7 });
+  const [section1Ref, section1InView] = useInView({ threshold: 0.6 });
   return (
     <>
       <Header

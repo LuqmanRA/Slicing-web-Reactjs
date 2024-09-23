@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
-import HoverLink from "./HoverLink";
+import HoverLink from "../HoverLink";
 
 const WorkSection = () => {
   return (

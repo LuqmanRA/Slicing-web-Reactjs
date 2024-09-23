@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.svg?react";
-import LogoName from "../assets/logoname.svg?react";
+import Logo from "../../assets/logo.svg?react";
+import LogoName from "../../assets/logoname.svg?react";
 import Modal from "react-modal";
 import { useState } from "react";
-import HoverLink from "./HoverLink";
+import Menu from "./Menu";
 
 const customStyles: Modal.Styles = {
   content: {
@@ -122,54 +122,7 @@ function Header({ classname = "", color = "", bg = "" }: Props) {
       >
         <div className="h-full px-4 md:px-20 lg:px-40 xl:px-20 xl:pr-[120px]">
           <div className=" flex h-full flex-col gap-14 pt-8 md:gap-20 md:pb-16 md:pt-10 lg:pb-12 xl:justify-between xl:pb-10 xl:pt-14 2xl:pb-20 2xl:pt-20">
-            <nav className="flex w-full flex-col gap-y-4 md:gap-y-6 2xl:gap-y-8">
-              <span className="text-[#9D9DAD]">Menu</span>
-              <ul className="flex w-full flex-col flex-nowrap items-start justify-start gap-y-4 md:gap-y-6">
-                <li className="w-full">
-                  <Link
-                    to="/works"
-                    className="underline-hover relative text-black md:text-[32px] text-[24px]"
-                  >
-                    Works
-                  </Link>
-                </li>
-                <li className="w-full">
-                  <Link
-                    to="/works"
-                    className="underline-hover relative text-black md:text-[32px] text-[24px]"
-                  >
-                    Works
-                  </Link>
-                </li>
-                <li className="w-full">
-                  <Link
-                    to="/works"
-                    className="underline-hover relative text-black md:text-[32px] text-[24px]"
-                  >
-                    Works
-                  </Link>
-                </li>
-                <li className="w-full">
-                  <Link
-                    to="/works"
-                    className="underline-hover relative text-black md:text-[32px] text-[24px]"
-                  >
-                    Works
-                  </Link>
-                </li>
-                <li className="mt-4 w-full md:w-auto 2xl:mt-6">
-                  <div className="flex">
-                    <HoverLink
-                      to="/get-in-touch"
-                      bg="bg-black text-white"
-                      textcolor="after:text-black"
-                    >
-                      Get in touch
-                    </HoverLink>
-                  </div>
-                </li>
-              </ul>
-            </nav>
+            <Menu />
           </div>
         </div>
       </Modal>

@@ -1,11 +1,11 @@
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 import ParallaxVideoSection from "../components/ParallaxVideoSection";
 import Solutions from "../components/solutions";
-import Header from "../components/Header";
-import WorkSection from "../components/WorkSection";
+import Header from "../components/Header/Header";
+import WorkSection from "../components/home/WorkSection";
 import SkillsSection from "../components/SkillsSection";
 import ClientsSection from "../components/ClientsSection";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
 
 const Home = () => {
