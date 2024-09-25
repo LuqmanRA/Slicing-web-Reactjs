@@ -1,16 +1,4 @@
-export interface ContentDetail {
-  heading: string;
-  list: string[];
-}
-
-export interface Content {
-  id: number;
-  title: string;
-  description: string;
-  details: ContentDetail[];
-}
-
-export const contents: Content[] = [
+export const contents = [
   {
     id: 1,
     title: "Brand Strategy",

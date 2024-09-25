@@ -1,10 +1,10 @@
-import { clients, Client } from "../data/clients";
+import { clients } from "../data/clients";
 import { Link } from "react-router-dom";
 
 const ClientLogo = () => {
   return (
     <div className="grid-cols-3 grid w-full overflow-hidden rounded-2xl border border-black border-opacity-5">
-      {clients.map((client: Client) => (
+      {clients.map((client) => (
         <Link
           to="#"
           key={client.id}

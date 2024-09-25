@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { contents, Content } from "../data/contents";
+import { contents } from "../data/contents";
 
 const SkillsContent = () => {
   const [openContent, setOpenContent] = useState<number>(1);
@@ -15,7 +15,7 @@ const SkillsContent = () => {
 
   return (
     <div className="flex flex-col items-start self-stretch 2xl:max-w-[526px]">
-      {contents.map((content: Content) => (
+      {contents.map((content) => (
         <div
           key={content.id}
           className="w-full overflow-hidden border-b border-solid border-[#545454] bg-black py-6"

@@ -1,10 +1,4 @@
-export interface Client {
-  id: number;
-  title: string;
-  image: string;
-}
-
-export const clients: Client[] = [
+export const clients = [
   {
     id: 1,
     title: "select-logo",

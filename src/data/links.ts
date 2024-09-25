@@ -1,18 +1,4 @@
-export interface link {
-  id: number;
-  title: string;
-  href: string;
-}
-
-export interface Link {
-  menu: link[];
-  service: link[];
-  industri: link[];
-  company: link[];
-  media: link[];
-}
-
-export const links: Link = {
+export const links = {
   menu: [
     {
       id: 1,
