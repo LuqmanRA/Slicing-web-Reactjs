@@ -1,4 +1,4 @@
-import HoverLink from "./HoverLink";
+import HoverLink from "../HoverLink";
 import ClientLogo from "./ClientLogo";
 
 const Clients = () => {

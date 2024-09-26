@@ -196,3 +196,21 @@ textarea:hover {
   background-color: black;
   color: white;
 }
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 60s linear infinite;
+  -webkit-animation: infinite-scroll 60s linear infinite;
+}
+
+.content-animation-scroll:hover .animate-infinite-scroll {
+  animation-play-state: paused;
+}

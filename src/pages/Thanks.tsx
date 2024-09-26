@@ -1,6 +1,7 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
+import ThanksSection from "../components/Thanks/ThanksSection";
 
 const Thanks = () => {
   const [section1Ref, section1InView] = useInView({ threshold: 0.6 });
@@ -14,7 +15,9 @@ const Thanks = () => {
         }
         bg={section1InView ? "bg-white" : "bg-black"}
       />
-      <main></main>
+      <main>
+        <ThanksSection />
+      </main>
       <div ref={section1Ref}>
         <Footer />
       </div>

@@ -1,5 +1,5 @@
-import HoverLink from "./HoverLink";
-import SkillsContent from "./SkillsContent";
+import HoverLink from "../HoverLink";
+import Accordion from "./Accordion";
 
 const SkillsSection = () => {
   return (
@@ -33,7 +33,7 @@ const SkillsSection = () => {
             </HoverLink>
           </div>
         </div>
-        <SkillsContent />
+        <Accordion />
       </div>
     </section>
   );

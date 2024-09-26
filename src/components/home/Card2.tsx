@@ -5,12 +5,12 @@ import PausedOverlay from "./PausedOverlay";
 import { useRef } from "react";
 import { cards } from "../../data/cards";
 
-const Card = () => {
+const Card2 = () => {
   const wrapperLinkRef = useRef(null);
 
   return (
     <>
-      {cards.slice(0, 4).map((card) => (
+      {cards.slice(4, 7).map((card) => (
         <Link
           key={card.id}
           to={card.href}
@@ -62,4 +62,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card2;

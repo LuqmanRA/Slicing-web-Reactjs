@@ -1,4 +1,4 @@
-import { clients } from "../data/clients";
+import { clients } from "../../data/clients";
 import { Link } from "react-router-dom";
 
 const ClientLogo = () => {

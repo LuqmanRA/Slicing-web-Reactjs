@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
+import Card2 from "./card2";
 import HoverLink from "../HoverLink";
 
 const WorkSection = () => {
@@ -9,14 +10,9 @@ const WorkSection = () => {
         <div className="mb-16 flex flex-col gap-20 md:mb-20 lg:mb-[120px] lg:flex-row xl:gap-[120px] 2xl:mb-40 2xl:gap-40">
           <div className="flex w-full flex-col gap-y-20 xl:gap-y-40">
             <Card />
-            <Card />
-            <Card />
-            <Card />
           </div>
           <div className="flex w-full flex-col gap-y-20 lg:pt-[400px] xl:gap-y-40">
-            <Card />
-            <Card />
-            <Card />
+            <Card2 />
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:gap-20 xl:gap-[120px] 2xl:gap-20">

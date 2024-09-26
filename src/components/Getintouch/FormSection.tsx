@@ -58,10 +58,7 @@ const FormSection = () => {
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      console.log("Form is valid, submitting data:", formValues);
       e.currentTarget.submit();
-    } else {
-      console.log("Form has errors:", errors);
     }
   };
 

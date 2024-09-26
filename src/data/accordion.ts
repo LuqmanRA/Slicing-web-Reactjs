@@ -1,4 +1,4 @@
-export const contents = [
+export const accordion = [
   {
     id: 1,
     title: "Brand Strategy",

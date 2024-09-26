@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { contents } from "../data/contents";
+import { accordion } from "../../data/accordion";
 
-const SkillsContent = () => {
+const Accordion = () => {
   const [openContent, setOpenContent] = useState<number>(1);
-  const totalContents = contents.length;
+  const totalContents = accordion.length;
 
   const handleToggle = (contentId: number) => {
     if (openContent === contentId) {
@@ -15,7 +15,7 @@ const SkillsContent = () => {
 
   return (
     <div className="flex flex-col items-start self-stretch 2xl:max-w-[526px]">
-      {contents.map((content) => (
+      {accordion.map((content) => (
         <div
           key={content.id}
           className="w-full overflow-hidden border-b border-solid border-[#545454] bg-black py-6"
@@ -62,4 +62,4 @@ const SkillsContent = () => {
   );
 };
 
-export default SkillsContent;
+export default Accordion;
