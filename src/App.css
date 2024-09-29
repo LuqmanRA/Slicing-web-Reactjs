@@ -214,3 +214,13 @@ textarea:hover {
 .content-animation-scroll:hover .animate-infinite-scroll {
   animation-play-state: paused;
 }
+
+.worksItemLink:hover img,
+.worksItemLink:focus img {
+  transform: scale(1.04);
+}
+
+.worksItemLink:hover h2,
+.worksItemLink:focus h2 {
+  color: #2d2dff;
+}
