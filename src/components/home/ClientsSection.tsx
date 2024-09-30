@@ -1,9 +1,9 @@
 import HoverLink from "../HoverLink";
-import ClientLogo from "./ClientLogo";
+import ClientLogo from "../ClientLogo";
 
 const Clients = () => {
   return (
-    <section className="relative z-50 bg-white px-2  py-20 md:px-6 md:py-[120px] lg:px-20 lg:py-40 xl:px-[156px] 2xl:px-[256px] 2xl:py-[240px]">
+    <section className="relative z-50 bg-white px-2  py-20 md:px-6 md:py-[120px] lg:px-20 lg:py-40 xl:px-[156px] 2xl:py-[240px]">
       <div className="m-auto w-full 2xl:max-w-[1408px]">
         <div className="flex flex-col items-start gap-y-14 lg:grid lg:grid-cols-2 lg:flex-row lg:justify-between lg:gap-20 xl:gap-[120px] 2xl:gap-40">
           <div className="flex flex-col gap-10 2xl:gap-12">
@@ -28,7 +28,7 @@ const Clients = () => {
             </div>
           </div>
           <div className="h-full">
-            <ClientLogo />
+            <ClientLogo className="grid-cols-3" />
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-black">
       <div className="relative z-50 bg-black ">
-        <div className="m-auto w-full px-4 md:px-6 lg:px-20 xl:px-[156px] 2xl:px-[256px]">
+        <div className="m-auto w-full px-4 md:px-6 lg:px-20 xl:px-[156px]">
           <div className="m-auto 2xl:max-w-[1408px]">
             <div className="relative z-1 overflow-hidden bg-black py-20 md:py-[120px] lg:pb-20 lg:pt-40 xl:pb-40 2xl:overflow-visible 2xl:py-[200px]">
               <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-[120px] 2xl:gap-40">

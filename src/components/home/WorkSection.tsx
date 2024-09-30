@@ -5,7 +5,7 @@ import HoverLink from "../HoverLink";
 
 const WorkSection = () => {
   return (
-    <section className="relative z-50 bg-white px-4 pb-20 md:px-6 md:pb-[120px] lg:px-20 lg:pb-40 xl:px-[156px] 2xl:px-[256px] 2xl:pb-25">
+    <section className="relative z-50 bg-white px-4 pb-20 md:px-6 md:pb-[120px] lg:px-20 lg:pb-40 xl:px-[156px] 2xl:pb-25">
       <div className="m-auto 2xl:max-w-[1408px]">
         <div className="mb-16 flex flex-col gap-20 md:mb-20 lg:mb-[120px] lg:flex-row xl:gap-[120px] 2xl:mb-40 2xl:gap-40">
           <div className="flex w-full flex-col gap-y-20 xl:gap-y-40">

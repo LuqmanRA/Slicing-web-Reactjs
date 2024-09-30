@@ -3,7 +3,7 @@ import { solutions } from "../../data/solutions";
 
 const SolutionsSection = () => {
   return (
-    <section className="relative z-50 bg-white px-6 py-20 md:pb-15 md:pt-[100px] md:px-20 xl:px-[156px] xl:py-40 2xl:px-[256px] 2xl:py-[200px]">
+    <section className="relative z-50 bg-white px-6 py-20 md:pb-15 md:pt-[100px] md:px-20 xl:px-[156px] xl:py-40 2xl:py-[200px]">
       <div className="m-auto w-full 2xl:max-w-[1408px]">
         <div className="flex flex-col-reverse items-start gap-y-20 md:gap-y-[120px] lg:grid lg:grid-cols-2 lg:items-center lg:justify-between lg:gap-20 xl:items-center xl:gap-[120px] 2xl:gap-20">
           <div className="2xl:min-w-[623px]">

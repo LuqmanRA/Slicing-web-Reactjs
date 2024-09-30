@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative z-50 bg-white px-4 pb-20 pt-[200px] md:px-6 lg:px-20 lg:pb-[120px] xl:px-[156px] xl:pt-[240px] 2xl:px-[256px]">
+    <section className="relative z-50 bg-white px-4 pb-20 pt-[200px] md:px-6 lg:px-20 lg:pb-[120px] xl:px-[156px] xl:pt-[240px]">
       <div className="m-auto w-full 2xl:max-w-[1408px]">
         <div className="flex flex-col gap-y-10 md:gap-y-14">
           <div className="flex flex-col gap-6">

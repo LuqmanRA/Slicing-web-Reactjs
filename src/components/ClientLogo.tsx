@@ -1,9 +1,11 @@
-import { clients } from "../../data/clients";
+import { clients } from "../data/clients";
 import { Link } from "react-router-dom";
 
-const ClientLogo = () => {
+const ClientLogo = (props: any) => {
   return (
-    <div className="grid-cols-3 grid w-full overflow-hidden rounded-2xl border border-black border-opacity-5">
+    <div
+      className={`${props.grid} grid w-full overflow-hidden rounded-2xl border border-black border-opacity-5`}
+    >
       {clients.map((client) => (
         <Link
           to="#"

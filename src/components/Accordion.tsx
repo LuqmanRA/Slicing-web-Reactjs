@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { accordion } from "../../data/accordion";
+import { accordion } from "../data/accordion";
 
 const Accordion = () => {
   const [openContent, setOpenContent] = useState<number>(1);

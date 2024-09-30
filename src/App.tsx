@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Getintouch from "./pages/Getintouch";
 import Thanks from "./pages/Thanks";
 import Works from "./pages/Works";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/get-in-touch" element={<Getintouch />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/works" element={<Works />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>
