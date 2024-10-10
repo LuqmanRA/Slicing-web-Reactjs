@@ -8,6 +8,7 @@ const Getintouch = () => {
   return (
     <>
       <Header
+        position="fixed"
         classname={section1InView ? "text-white" : "text-black "}
         color={
           section1InView ? "group-hover:text-black" : "group-hover:text-white"

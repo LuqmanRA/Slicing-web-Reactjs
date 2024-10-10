@@ -1,6 +1,10 @@
 import ShowcaseContent from "../ShowcaseContent";
+import { showcase } from "../../data/showcase";
 
 const Showcase = () => {
+  const firstHalf = showcase.slice(0, 2);
+  const secondHalf = showcase.slice(2, 3);
+
   return (
     <section className="bg-white px-4 py-12 md:px-6 lg:px-20 lg:py-16 xl:px-[156px] xl:py-20">
       <div className="m-auto w-full max-w-[1408px]">
@@ -13,11 +17,10 @@ const Showcase = () => {
           </div>
           <div className="flex flex-col gap-20 lg:grid lg:grid-cols-2 xl:gap-[120px] 2xl:gap-40">
             <div className="flex flex-col gap-20 lg:gap-40">
-              <ShowcaseContent />
-              <ShowcaseContent />
+              <ShowcaseContent showcaseData={firstHalf} />
             </div>
             <div className="lg:pt-[400px]">
-              <ShowcaseContent />
+              <ShowcaseContent showcaseData={secondHalf} />
             </div>
           </div>
         </div>

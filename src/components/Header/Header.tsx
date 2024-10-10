@@ -27,9 +27,10 @@ interface Props {
   classname: string;
   color: string;
   bg: string;
+  position: string;
 }
 
-function Header({ classname = "", color = "", bg = "" }: Props) {
+function Header({ classname = "", color = "", bg = "", position = "" }: Props) {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -49,7 +50,9 @@ function Header({ classname = "", color = "", bg = "" }: Props) {
 
   return (
     <header>
-      <div className="fixed left-0 top-0 w-auto bg-transparent transition-all duration-300 z-[60]">
+      <div
+        className={`${position} left-0 top-0 w-auto bg-transparent transition-all duration-300 z-[60]`}
+      >
         <div className=" px-4 md:px-6 lg:px-10 xl:px-16 2xl:px-20">
           <div className="flex items-center justify-between gap-4 transition-[height] duration-300 ease-in-out h-20 pt-10">
             <div className={`flex flex-wrap justify-start ${classname}`}>
@@ -63,7 +66,9 @@ function Header({ classname = "", color = "", bg = "" }: Props) {
           </div>
         </div>
       </div>
-      <div className="fixed right-0 w-auto z-[120] px-4 md:px-6 lg:px-10 xl:px-16 2xl:px-20">
+      <div
+        className={`${position} right-0 w-auto z-[120] px-4 md:px-6 lg:px-10 xl:px-16 2xl:px-20`}
+      >
         <div className="h-20 pt-10 relative flex justify-end">
           <button
             onClick={toggleModal}

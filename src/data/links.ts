@@ -3,22 +3,22 @@ export const links = {
     {
       id: 1,
       title: "Works",
-      href: "#",
+      href: "/works",
     },
     {
       id: 2,
       title: "Blog",
-      href: "#",
+      href: "/blog",
     },
     {
       id: 3,
       title: "About us",
-      href: "#",
+      href: "/about",
     },
     {
       id: 4,
       title: "Conceptzilla",
-      href: "#",
+      href: "/conceptzilla",
     },
   ],
 
@@ -191,6 +191,29 @@ export const links = {
       id: 5,
       title: "LinkedIn",
       href: "#",
+    },
+  ],
+
+  works: [
+    {
+      id: 1,
+      title: "Featured",
+      href: "/works",
+    },
+    {
+      id: 2,
+      title: "Web",
+      href: "/works/web",
+    },
+    {
+      id: 3,
+      title: "Mobile",
+      href: "/works/mobile",
+    },
+    {
+      id: 4,
+      title: "Branding",
+      href: "/works/branding",
     },
   ],
 };

@@ -6,7 +6,7 @@ const ClientLogo = (props: any) => {
     <div
       className={`${props.grid} grid w-full overflow-hidden rounded-2xl border border-black border-opacity-5`}
     >
-      {clients.map((client) => (
+      {clients.logo.map((client) => (
         <Link
           to="#"
           key={client.id}

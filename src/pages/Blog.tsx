@@ -1,14 +1,17 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
-import Featured from "../components/Works/Featured";
-const Works = () => {
+import Hiro from "../components/Blog/Hiro";
+import ContentBlog from "../components/Blog/ContentBlog";
+import ButtonToTop from "../components/Blog/ButtonToTop";
+
+const Blog = () => {
   const [section1Ref, section1InView] = useInView({ threshold: 0.6 });
 
   return (
     <>
       <Header
-        position="fixed"
+        position="absolute"
         classname={section1InView ? "text-white" : "text-black "}
         color={
           section1InView ? "group-hover:text-black" : "group-hover:text-white"
@@ -16,7 +19,9 @@ const Works = () => {
         bg={section1InView ? "bg-white" : "bg-black"}
       />
       <main>
-        <Featured />
+        <Hiro />
+        <ContentBlog />
+        <ButtonToTop />
       </main>
       <div ref={section1Ref}>
         <Footer />
@@ -25,4 +30,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Blog;

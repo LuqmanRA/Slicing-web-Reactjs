@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .underline-hover::before {
   position: absolute;
   bottom: 0;

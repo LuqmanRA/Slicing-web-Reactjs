@@ -1,4 +1,5 @@
 import Video from "../../assets/who_segm_about-webm.webm";
+import { companies } from "../../data/companies";
 
 const CompaniesHire = () => {
   return (
@@ -13,33 +14,14 @@ const CompaniesHire = () => {
           </div>
           <div className="flex flex-col gap-20 lg:grid lg:grid-cols-2 lg:items-center xl:gap-[120px] 2xl:gap-40">
             <div className="flex flex-col gap-10 lg:gap-16 2xl:gap-20">
-              <div className="flex flex-col gap-4">
-                <h3 className="2xl-text-[36px] text-2xl text-[#131623]">
-                  Reinvention
-                </h3>
-                <p className="text-[#545469] text-xl">
-                  When businesses outgrow their markets and need to scale, we
-                  provide solutions for this growth and expansion.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <h3 className="2xl-text-[36px] text-2xl text-[#131623]">
-                  Reinvention
-                </h3>
-                <p className="text-[#545469] text-xl">
-                  When businesses outgrow their markets and need to scale, we
-                  provide solutions for this growth and expansion.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <h3 className="2xl-text-[36px] text-2xl text-[#131623]">
-                  Reinvention
-                </h3>
-                <p className="text-[#545469] text-xl">
-                  When businesses outgrow their markets and need to scale, we
-                  provide solutions for this growth and expansion.
-                </p>
-              </div>
+              {companies.data1.map((data) => (
+                <div key={data.id} className="flex flex-col gap-4">
+                  <h3 className="2xl-text-[36px] text-2xl text-[#131623]">
+                    {data.title}
+                  </h3>
+                  <p className="text-[#545469] text-xl">{data.description}</p>
+                </div>
+              ))}
             </div>
             <div className="relative m-auto flex w-[358px] items-center justify-center md:w-[392px] xl:w-[396px] 2xl:w-[490px]">
               <div>

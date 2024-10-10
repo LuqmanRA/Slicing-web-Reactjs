@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { accordion } from "../data/accordionData";
+import { accordion } from "../../data/accordionData";
 
 const Accordion = () => {
   const [openContent, setOpenContent] = useState<number>(1);
-  const totalContents = accordion.solution.length;
+  const totalContents = accordion.question.length;
 
   const handleToggle = (contentId: number) => {
     if (openContent === contentId) {
@@ -15,7 +15,7 @@ const Accordion = () => {
 
   return (
     <div className="flex flex-col items-start self-stretch 2xl:max-w-[526px]">
-      {accordion.solution.map((content) => (
+      {accordion.question.map((content) => (
         <div
           key={content.id}
           className="w-full overflow-hidden border-b border-solid border-[#545454] bg-black py-6"
@@ -42,18 +42,10 @@ const Accordion = () => {
             className={openContent === content.id ? "open" : ""}
           >
             <div className="h-2"></div>
-            <p className="mb-4 text-white">{content.description}</p>
-            {content.details.map((detail, index) => (
-              <div key={index} className="mb-4">
-                <h4 className="text-lg text-white mb-2">{detail.heading}</h4>
-                <ul className="pl-[18px] list-disc">
-                  {detail.list.map((item, itemIndex) => (
-                    <li key={itemIndex} className="list-disc text-[#a2a2a2]">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {content.description.map((data, index) => (
+              <p key={index} className="mb-4 text-[#dcdcdc]">
+                {data}
+              </p>
             ))}
           </div>
         </div>

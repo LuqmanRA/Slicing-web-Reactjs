@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <>
       <Header
+        position="fixed"
         classname={
           section1InView || section2InView ? "text-white" : "text-black "
         }
@@ -27,7 +28,7 @@ const Home = () => {
       />
       <main>
         <HeroSection />
-        <ParallaxVideoSection />
+        <ParallaxVideoSection image="https://cms.shakuro.com/media/Shakuro Home Page Video_mp4.mp4" />
         <Solutions />
         <WorkSection />
         <div ref={section1Ref}>

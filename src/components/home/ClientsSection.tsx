@@ -28,7 +28,7 @@ const Clients = () => {
             </div>
           </div>
           <div className="h-full">
-            <ClientLogo className="grid-cols-3" />
+            <ClientLogo grid="grid-cols-3" />
           </div>
         </div>
       </div>

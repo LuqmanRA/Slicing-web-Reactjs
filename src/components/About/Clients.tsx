@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ClientLogo from "../ClientLogo";
 import HoverLink from "../HoverLink";
+import { clients } from "../../data/clients";
 
 const Client = () => {
   return (
@@ -21,37 +22,41 @@ const Client = () => {
           </div>
           <div className="flex flex-col gap-y-14 md:gap-y-20 2xl:gap-y-[120px]">
             <div className="flex w-full flex-col gap-10 lg:gap-y-6 2xl:gap-14">
-              <div className="flex flex-col items-start gap-y-6 border-b border-[#d1d1e1] pb-10 last:border-none last:pb-0 2xl:pb-14">
-                <div className="w-full lg:flex lg:flex-row-reverse lg:justify-between">
-                  <div className="flex items-center gap-3 lg:w-full lg:max-w-[300px]">
-                    <div className="relative h-10 w-10 overflow-hidden bg-[#eeeeee] rounded-full">
-                      <img
-                        src="https://shakuro.com/_next/image?url=%2Fabout-us%2Ftestimonials%2Fsteven-lee-ava.png&w=48&q=75"
-                        alt=""
-                        className="object-cover w-full h-full text-transparent"
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <span className="text-[#131623]">Steven Lee</span>
-                      <span className="text-[#545469]">
-                        VP Marketing, Fit For Bucks
-                      </span>
-                    </div>
-                  </div>
-                  <div className="pt-6 lg:pr-6">
-                    <p className="text-2xl text-[#131623] md:max-w-[532px] xl:max-w-[624px]">
-                      “Everybody who’s seen the app tells me how much they like
-                      it. I’m very pleased with the app.”
-                    </p>
-                  </div>
-                </div>
-                <Link
-                  to="#"
-                  className="underline-hover relative text-black font-medium"
+              {clients.review.map((client) => (
+                <div
+                  key={client.id}
+                  className="flex flex-col items-start gap-y-6 border-b border-[#d1d1e1] pb-10 last:border-none last:pb-0 2xl:pb-14"
                 >
-                  Show review
-                </Link>
-              </div>
+                  <div className="w-full lg:flex lg:flex-row-reverse lg:justify-between">
+                    <div className="flex items-center gap-3 lg:w-full lg:max-w-[300px]">
+                      <div className="relative h-10 w-10 overflow-hidden bg-[#eeeeee] rounded-full">
+                        <img
+                          src={client.image}
+                          alt=""
+                          className="object-cover w-full h-full text-transparent"
+                        />
+                      </div>
+                      <div className="flex flex-col items-start">
+                        <span className="text-[#131623]">{client.name}</span>
+                        <span className="text-[#545469]">
+                          {client.position}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="pt-6 lg:pr-6">
+                      <p className="text-2xl text-[#131623] md:max-w-[532px] xl:max-w-[624px]">
+                        {client.mesage}
+                      </p>
+                    </div>
+                  </div>
+                  <Link
+                    to={client.href}
+                    className="underline-hover relative text-black font-medium"
+                  >
+                    Show review
+                  </Link>
+                </div>
+              ))}
             </div>
             <div className="flex">
               <HoverLink

@@ -1,6 +1,6 @@
 const AboutHero = () => {
   return (
-    <section className="bg-black px-4 pb-[120px] pt-[200px] md:px-6 lg:px-20 xl:px-[156px] xl:pt-[240px]">
+    <section className="bg-black px-4 pb-[120px] pt-[200px] md:px-6 lg:px-20 xl:px-[156px] xl:pt-[240px] overflow-x-hidden">
       <div className="m-auto w-full max-w-[1408px]">
         <div className="flex flex-col gap-14">
           <div className="flex flex-col gap-y-6 text-[#a2a2a2]">
